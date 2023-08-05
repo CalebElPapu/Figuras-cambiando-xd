@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Dibujo en tiempo real</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Gloria+Hallelujah&family=Neonderthaw&family=Noto+Sans+TC&family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <center>
+
+            <h2 class="heading">
+                Figuras en movimiento xd 
+                <br>
+                <br>
+                <span class="note">Nota: Junta o separa las muñecas para cambiar el tamaño de la figura y con la nariz muevela</span>
+                <br>
+                <span id="Tamaño de la figura"></span>
+            </h2>
+
+            <br> <br>
+
+            <label for="opciones muy epicas" style="font-size: 25px;">Elije :v </label>
+            <select name="option_names" id="option_names" style="width: 200px; height: 40px; font-size: 25px;">
+                <option value="Círculo">Círculo</option>
+                <option value="Cuadrado">Cuadrado</option>
+                <option value="Texto">Texto</option>
+            </select>
+
+            <br> <br>
+
+            <input type="text" id="text_input" placeholder="Escribe una palabra (unicamente para text)" style="width: 200px; height: 40px; font-size: 25px;">
+
+            <button id="enviar" onclick="enviar()" class="btn-info" style="width: 200px; height: 40px; font-size: 25px;">Enviar :v</button>
+
+        </center>
+        <script src="main.js"></script>
+    </body>
+
+</html>
